@@ -13,7 +13,7 @@ export const profile: Profile =
     links: {
         linkedin: 'miyeonkim',
         email: 'miyeonkim.dev+website@gmail.com',
-        resume: '/Resume.pdf',
+        resume: './Resume.pdf',
     },
 
     about: {
