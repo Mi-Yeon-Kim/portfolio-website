@@ -22,7 +22,7 @@ export default function ExperienceItem({ title, company, timeline, descriptions,
     }
     const viewportOptions: ViewportOptions = {
         once: true,
-        amount: 0.4
+        amount: 0.1
     }
 
     return (

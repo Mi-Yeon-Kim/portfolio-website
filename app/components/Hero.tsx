@@ -68,7 +68,7 @@ export default function Hero()
             animate="visible"
             className="container text-center flex flex-col gap-8"
         >
-            <motion.p className="text-9xl font-medium">I am {profile.person.firstName}.</motion.p>
+            <motion.p className="text-9xl font-medium">I am <span className="inline-block">{profile.person.firstName}.</span></motion.p>
             <motion.p className="text-5xl font-extrabold text-gray-400">A</motion.p>
             <div className="relative flex h-35 items-center justify-center ">
                 <AnimatePresence mode="wait">

@@ -14,7 +14,7 @@ export const profile: Profile =
             'Reverse Engineer',
             'Full-Stack Developer',
             'Problem Solver',
-            'Collaborator',
+            'Team Player',
         ]
     },
 
