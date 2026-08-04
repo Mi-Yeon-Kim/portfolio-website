@@ -29,7 +29,7 @@ export default function AboutContent({content}: {content: Profile['about']}) {
 
     return (
         <motion.p 
-                    initial="hidden"
+            initial="hidden"
             whileInView="visible"
             variants={slideFadeInRightToLeft}
             viewport={viewportOptions}

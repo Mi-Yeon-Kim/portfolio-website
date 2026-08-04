@@ -6,8 +6,16 @@ export const profile: Profile =
         firstName: 'Mi-Yeon',
         lastName: 'Kim',
         initial: 'MK',
-        title: 'Software Engineer',
         pronouns: 'She/Her',
+        nouns: [
+            'Software Engineer',
+            'Creative',
+            'Game Developer',
+            'Reverse Engineer',
+            'Full-Stack Developer',
+            'Problem Solver',
+            'Collaborator',
+        ]
     },
 
     links: {

@@ -11,8 +11,8 @@ export type Profile = {
         firstName: string;
         lastName: string;
         initial: string;
-        title: string;
         pronouns: string;
+        nouns: string[];
     };
     links: {
         linkedin: string;
