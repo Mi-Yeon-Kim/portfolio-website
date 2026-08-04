@@ -18,7 +18,7 @@ export const profile: Profile =
 
     about: {
         short: "Software Engineer",
-        detail: "I'm a Software Engineer with 10+ years of experience delivering modernization for full-stack projects, as well as desktop applications. Solving complex problems with no clear answer is my passion. While not delivering enterprise code, I enjoy reverse engineering, game modding, and game developmment.",
+        detail: "I'm a Creative and Resourceful Software Engineer with 10+ years of experience delivering modernization for full-stack projects, as well as desktop applications. Solving complex problems with no clear answer is my passion. While not delivering enterprise code, I enjoy reverse engineering, game modding, and game developmment.",
     },
 
     jobs: [
