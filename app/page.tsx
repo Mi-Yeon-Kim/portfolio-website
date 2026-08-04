@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <NavMenu></NavMenu>
       <main>
-        <Hero content={profile.person.title}></Hero>
+        <Hero></Hero>
         <AboutSection></AboutSection>
         <ExperienceSection></ExperienceSection>
       </main>
