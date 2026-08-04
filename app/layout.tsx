@@ -22,7 +22,7 @@ export default function RootLayout({
       lang="en"
       className={`${outfitSans.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col items-center select-none font-outfit overflow-x-clip">{children}</body>
+      <body className="select-none font-outfit overflow-x-clip">{children}</body>
     </html>
   );
 }

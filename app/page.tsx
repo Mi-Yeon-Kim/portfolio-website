@@ -8,9 +8,11 @@ export default function Home() {
   return (
     <>
       <NavMenu></NavMenu>
-      <Hero content={profile.person.title}></Hero>
-      <AboutSection></AboutSection>
-      <ExperienceSection></ExperienceSection>
+      <main>
+        <Hero content={profile.person.title}></Hero>
+        <AboutSection></AboutSection>
+        <ExperienceSection></ExperienceSection>
+      </main>
     </>
   );
 }
