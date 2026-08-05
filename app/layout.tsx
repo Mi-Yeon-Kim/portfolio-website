@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfitSans.variable} h-full antialiased scroll-smooth`}
+      className={`${outfitSans.variable} h-screen antialiased scroll-smooth overflow-x-clip`}
     >
       <body className="select-none font-outfit overflow-x-clip">{children}</body>
     </html>
