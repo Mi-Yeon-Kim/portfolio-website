@@ -5,7 +5,7 @@ import { Profile } from "../Types/Profile";
 export function ProfileLink({children, profile}: {children: ReactNode, profile: string})
 {
     return (
-        <li className="size-10 rounded-full border border-primary-400 inline-block text-center inline-grid place-items-center">
+        <li className="size-15 sm:size-10 rounded-full border-4 sm:border border-primary-400 inline-block text-center inline-grid place-items-center">
             <a href={profile} >
                 {children}
             </a>
@@ -18,7 +18,7 @@ export default function ProfileLinks({links}: {links: Profile['links']}) {
     return (
         <ul className="inline-full flex flex-row justify-evenly">
             <ProfileLink profile={'https://linkedin.com/in/' + links.linkedin}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" className="fill-white size-7 ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" className="fill-white size-10 sm:size-7 ">
                 {/* <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--> */}
                 <path d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 
                 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 
@@ -29,7 +29,7 @@ export default function ProfileLinks({links}: {links: Profile['links']}) {
             </ProfileLink>
 
             <ProfileLink profile={'mailto:' + links.email}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" className="fill-white size-7 ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" className="fill-white size-10 sm:size-7 ">
                 {/* <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--> */}
                 <path d="M125.4 128C91.5 128 64 155.5 64 189.4C64 190.3 64 191.1 64.1 192L64 192L64 448C64 483.3 92.7 
                 512 128 512L512 512C547.3 512 576 483.3 576 448L576 192L575.9 192C575.9 191.1 576 190.3 576 189.4C576 
@@ -40,7 +40,7 @@ export default function ProfileLinks({links}: {links: Profile['links']}) {
             </ProfileLink>
 
             <ProfileLink profile={links.resume}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" className="fill-white size-7 ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" className="fill-white size-10 sm:size-7 ">
                 {/* <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--> */}
                 <path d="M304 112L192 112C183.2 112 176 119.2 176 128L176 512C176 520.8 183.2 528 192 528L448 528C456.8
                 528 464 520.8 464 512L464 272L376 272C336.2 272 304 239.8 304 200L304 112zM444.1 224L352 131.9L352

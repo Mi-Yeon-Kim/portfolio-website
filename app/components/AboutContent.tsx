@@ -33,7 +33,7 @@ export default function AboutContent({content}: {content: Profile['about']}) {
             whileInView="visible"
             variants={slideFadeInRightToLeft}
             viewport={viewportOptions}
-            className="basis-1/3 min-w-120 text-2xl text-gray-400 font-light"
+            className="sm:basis-1/3 sm:min-w-120 text-2xl text-gray-400 font-light mx-10 sm:mx-0"
         >{content.detail}</motion.p>
     );
 }

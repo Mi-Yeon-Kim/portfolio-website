@@ -9,6 +9,6 @@ export default function Avatar() {
             alt={ profile.person.firstName + ' ' + profile.person.lastName }
             width={200}
             height={200}
-            className="rounded-full outline-4 outline-offset-4 outline-primary-300"/>
+            className="rounded-full outline-4 outline-offset-4 outline-primary-300 mx-auto row-span-2"/>
     );
 }

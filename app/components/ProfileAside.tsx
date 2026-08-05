@@ -35,14 +35,11 @@ export default function ProfileAside({person, links}: { person: Profile["person"
             whileInView="visible"
             variants={slideFadeInLeftToRight}
             viewport={viewportOptions}
-            className="basis-1/3 min-w-120 flex flex-row items-start gap-5"
+            className="sm:basis-1/3 sm:min-w-120 grid sm:grid-flow-col grid-rows-4 auto-rows-min justify-center sm:grid-rows-2 sm:grid-cols-2 items-start gap-10 sm:gap-5"
         >
             <Avatar />
-            <div className="grow ml-5 text-5xl font-semibold flex flex-col h-[200px] justify-between">
-                <span className="grow-2 text-nowrap">{person.firstName}</span>
-                <span className="grow-2">{person.lastName}</span>
-                <span className="grow-2 content-end"><ProfileLinks links={links}/></span>
-            </div>
+            <span className="font-semibold text-5xl">{person.firstName} {person.lastName}</span>
+            <span className="sm:mt-5 text-5xl flex flex-col justify-between content-end"><ProfileLinks links={links}/></span>
         </motion.aside>
     );
 }
