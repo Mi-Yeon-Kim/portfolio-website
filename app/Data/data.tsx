@@ -172,6 +172,11 @@ export const profile: Profile =
     ],
 
     projects: [
-        {},
+        {
+            name: "0xC0DEBEEF",
+            imageSrc: "./project_0xC0DEBEEF.png",
+            link: "https://enfyve.itch.io/c0debeef",
+            description: "A game about reverse engineering, created in Godot over the course of a single month. This project blended aspects of coding, artistic design, sound design, and project management. When creating this, I sought to create an experience similar to older windows machines and reverse engineering 'crackmes,' in addition to patching assembly instructions. 0xC0DEBEEF was developed for both desktop and browsers."
+        },
     ],
 }
