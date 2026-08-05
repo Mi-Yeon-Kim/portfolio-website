@@ -6,6 +6,13 @@ export type Job = {
     tags: string[];
 };
 
+export type Project = {
+    name: string;
+    imageSrc: string;
+    link: string;
+    description: string;
+};
+
 export type Profile = {
     person: {
         firstName: string;
@@ -24,5 +31,5 @@ export type Profile = {
         detail: string;
     };
     jobs: Job[];
-    projects: {}[];
+    projects: Project[];
 };

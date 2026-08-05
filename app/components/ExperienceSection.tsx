@@ -8,7 +8,7 @@ export default function ExperienceSection()
     return (
         <PageSection link={"experience"}>
             <SectionTitle title="Experience"></SectionTitle>
-            <div className="my-20 py-5">
+            <div className="py-5">
                 <ExperienceList jobs={profile.jobs}></ExperienceList>
             </div>
         </PageSection>

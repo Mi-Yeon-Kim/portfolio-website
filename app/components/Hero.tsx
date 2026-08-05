@@ -69,7 +69,7 @@ export default function Hero()
             animate="visible"
             className="container text-center flex flex-col gap-10"
         >
-            <motion.p className="text-5xl sm:text-9xl font-medium">I am <span className="inline-block text-8xl sm:text-9xl mt-8">{profile.person.firstName}.</span></motion.p>
+            <motion.p className="text-5xl sm:text-9xl font-medium px-5">I am <span className="inline-block text-8xl sm:text-9xl mt-8">{profile.person.firstName}.</span></motion.p>
             <motion.p className="text-5xl font-extrabold text-gray-400">A</motion.p>
             <AnimatePresence mode="wait">
                 <motion.h1
@@ -83,7 +83,7 @@ export default function Hero()
                 </motion.h1>
             </AnimatePresence>
         </motion.div>
-        <FaChevronDown className="absolute bottom-15 text-3xl text-secondary-300"></FaChevronDown>
+        <FaChevronDown className="absolute bottom-28 text-3xl text-secondary-300"></FaChevronDown>
     </section>
     );
 }
