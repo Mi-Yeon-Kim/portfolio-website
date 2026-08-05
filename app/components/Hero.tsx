@@ -5,6 +5,7 @@ import PageSection from "./PageSection";
 import * as motion from "motion/react-client";
 import { AnimatePresence, Transition, Variants, ViewportOptions, stagger } from "motion/react";
 import { useEffect, useState } from "react";
+import { FaChevronDown } from "react-icons/fa";
 
 export default function Hero()
 {
@@ -66,24 +67,23 @@ export default function Hero()
         <motion.div variants={animationVariants}
             initial="hidden"
             animate="visible"
-            className="container text-center flex flex-col gap-8"
+            className="container text-center flex flex-col gap-10"
         >
-            <motion.p className="text-9xl font-medium">I am <span className="inline-block">{profile.person.firstName}.</span></motion.p>
+            <motion.p className="text-5xl sm:text-9xl font-medium">I am <span className="inline-block text-8xl sm:text-9xl mt-8">{profile.person.firstName}.</span></motion.p>
             <motion.p className="text-5xl font-extrabold text-gray-400">A</motion.p>
-            <div className="relative flex h-35 items-center justify-center ">
-                <AnimatePresence mode="wait">
-                    <motion.h1
-                        key={nounIndex}
-                        initial="hiddenLower" animate="visible" exit="hiddenUpper"
-                        variants={nounCarouselVariants}
-                        transition={carouselTransition}
-                        className="absolute text-8xl font-semibold text-transparent bg-clip-text bg-linear-to-b from-primary-200 to-primary-600 uppercase drop-shadow-md drop-shadow-primary-500"
-                    >
-                        {nouns[nounIndex]}
-                    </motion.h1>
-                </AnimatePresence>
-            </div>
+            <AnimatePresence mode="wait">
+                <motion.h1
+                    key={nounIndex}
+                    initial="hiddenLower" animate="visible" exit="hiddenUpper"
+                    variants={nounCarouselVariants}
+                    transition={carouselTransition}
+                    className="text-6xl sm:text-8xl h-45 font-semibold text-transparent bg-clip-text bg-linear-to-b from-primary-200 to-primary-600 uppercase drop-shadow-md drop-shadow-primary-500"
+                >
+                    {nouns[nounIndex]}
+                </motion.h1>
+            </AnimatePresence>
         </motion.div>
+        <FaChevronDown className="absolute bottom-15 text-3xl text-secondary-300"></FaChevronDown>
     </section>
     );
 }
