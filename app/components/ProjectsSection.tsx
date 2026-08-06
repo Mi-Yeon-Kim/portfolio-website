@@ -9,7 +9,7 @@ export default function ProjectsSection ()
         <PageSection link={"projects"}>
             <SectionTitle title="Projects"></SectionTitle>
             
-            <ul className="flex flex-row gap-10 mx-20">
+            <ul className="flex flex-col mx-10">
                 {
                     profile.projects.map(project =>
                         <Project key={project.name} project={project}></Project>
