@@ -10,7 +10,7 @@ export default function Project ({project}: {project: Project})
             href={project.link}
             className="group xl:basis-4/10 min-w-120" >
                 <div className="relative border-4 border-primary-300 ">
-                    <FaArrowUp className="absolute right-5 top-5 group-hover:-translate-y-3 group-hover:translate-x-3 z-50 text-4xl rotate-45 text-primary-100 shadow-md transition duration-250 ease-in-out"></FaArrowUp>
+                    <FaArrowUp className="absolute right-5 top-5 group-hover:-translate-y-3 group-hover:translate-x-3 z-50 text-4xl rotate-45 text-secondary-500 shadow-md transition duration-250 ease-in-out"></FaArrowUp>
                     <img
                         src={ project.imageSrc }
                         alt={ project.name + ' cover image' }
