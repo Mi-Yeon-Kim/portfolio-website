@@ -64,8 +64,9 @@ export default function Hero()
             <div className="absolute -z-20 right-15 -top-30 bg-primary-400/20 rounded-full size-200 blur-[250px]"></div>
             <div className="absolute -z-20 -left-40 top-130 bg-secondary-400/20 rounded-full size-200 blur-[250px]"></div>
         </div>
-        <div className="absolute -z-40 w-full h-screen bg-[url('/pattern.svg')] bg-size-[120px] opacity-80 bg-fixed 
-            border-b-4 border-secondary-300"></div>
+        <div className="absolute -z-40 w-full h-screen bg-size-[120px] opacity-80 bg-fixed border-b-4
+            border-secondary-300"
+            style={{'backgroundImage': 'url(./pattern.svg)'}}></div>
         <div className="absolute -z-50 w-full h-[240vh] bg-linear-to-b/oklch from-primary-500/30 via-primary-500/10 
             via-70% to-primary-400/0"></div>
 

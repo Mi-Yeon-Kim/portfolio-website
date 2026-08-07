@@ -26,11 +26,14 @@ export default function ExperienceItem({ title, company, timeline, descriptions,
     }
 
     return (
-        <li className="group">
+        <li className="group relative">
             {/* decorative circle */}
+            <div className="absolute float-left left-[7px] w-[2px] h-full group-not-last:bg-secondary-200 
+                group-last:bg-gradient-to-b group-last:from-secondary-200 group-last:via-secondary-200/80 
+                group-last:via-60% group-last:to-secondary-200/0 group-last:to-80%"></div>
             <div className="absolute float-left rounded-full size-4 bg-primary-800 border-2 border-primary-200"></div>
 
-            <div className="ml-[7px] pl-15 flex flex-col border-l-secondary-100 group-not-last:border-l-2">
+            <div className="ml-[7px] pl-15 ">
                 <motion.div className="relative -top-[38px] shadow-lg/50 shadow-black p-5 my-2 bg-primary-800/10 rounded-xl"
                     initial="hidden"
                     whileInView="visible"
