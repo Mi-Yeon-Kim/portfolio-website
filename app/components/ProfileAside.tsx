@@ -36,17 +36,20 @@ export default function ProfileAside({person, links}: { person: Profile["person"
             whileInView="visible"
             variants={slideFadeInLeftToRight}
             viewport={viewportOptions}
-            className="sm:basis-1/3 sm:min-w-120 grid sm:grid-flow-col grid-rows-4 auto-rows-min justify-center sm:grid-rows-2 sm:grid-cols-2 items-start gap-10 sm:gap-5"
+            className="sm:basis-1/3 sm:min-w-150 grid sm:grid-flow-col grid-rows-3 auto-rows-min justify-center sm:grid-rows-2 sm:grid-cols-2 items-start gap-10 sm:gap-0"
         >
             <Image
                 src='./profile_pic.jpg'
                 alt={ profile.person.firstName + ' ' + profile.person.lastName }
-                width={200}
-                height={200}
-                className="rounded-full outline-4 outline-offset-4 outline-primary-300 mx-auto row-span-2"/>
+                width={250}
+                height={250}
+                className="sm:mr-20 rounded-full outline-4 outline-offset-6 outline-primary-500 mx-auto row-span-3"/>
 
-            <span className="font-semibold text-5xl">{person.firstName} {person.lastName}</span>
-            <span className="sm:mt-5 text-5xl flex flex-col justify-between content-end"><ProfileLinks links={links}/></span>
+            <span className="text-center sm:text-right">
+                <div className="font-semibold text-5xl">{person.firstName} {person.lastName}</div>
+                <div className="text-3xl text-gray-500">{person.pronouns}</div>
+            </span>
+            <span className="text-5xl flex flex-col justify-between w-100 sm:w-auto"><ProfileLinks links={links}/></span>
         </motion.aside>
     );
 }

@@ -25,6 +25,7 @@ export type Profile = {
         linkedin: string;
         email: string;
         resume: string;
+        github: string;
     };
     about: {
         short: string;

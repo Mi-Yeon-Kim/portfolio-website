@@ -26,12 +26,12 @@ export default function ExperienceItem({ title, company, timeline, descriptions,
     }
 
     return (
-        <li>
+        <li className="group">
             {/* decorative circle */}
-            <div className="absolute float-left rounded-full size-4 bg-primary-600 border-2 border-primary-200"></div>
+            <div className="absolute float-left rounded-full size-4 bg-primary-800 border-2 border-primary-200"></div>
 
-            <div className="ml-[7px] pl-15 flex flex-col border-l-primary-100 border-l-2">
-                <motion.div className="relative -top-[11px]"
+            <div className="ml-[7px] pl-15 flex flex-col border-l-secondary-100 group-not-last:border-l-2">
+                <motion.div className="relative -top-[38px] shadow-lg/50 shadow-black p-5 my-2 bg-primary-800/10 rounded-xl"
                     initial="hidden"
                     whileInView="visible"
                     variants={displayVariants}
@@ -40,7 +40,7 @@ export default function ExperienceItem({ title, company, timeline, descriptions,
                     <span className="grid grid-flow-col grid-rows-2 justify-between items-center">
                         <h3 className="text-3xl font-extrabold">{title}</h3>
                         <h4 className="text-2xl font-semibold">{company}</h4>
-                        <h5 className="row-span-2 text-2xl font-medium align-middle text-gray-400">{timeline.start} - {timeline.end}</h5>
+                        <h5 className="text-2xl font-medium align-middle text-gray-400">{timeline.start} - {timeline.end}</h5>
 
                     </span>
 

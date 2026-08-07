@@ -22,6 +22,7 @@ export const profile: Profile =
         linkedin: 'miyeonkim',
         email: 'miyeonkim.dev+website@gmail.com',
         resume: './Resume.pdf',
+        github: 'Mi-Yeon-Kim'
     },
 
     about: {
