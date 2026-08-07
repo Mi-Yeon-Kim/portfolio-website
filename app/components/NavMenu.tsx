@@ -10,7 +10,7 @@ export default function NavMenu()
         >
 
             <a href="#top" className="text-3xl font-bold hover:scale-110 transition" >
-                <span className="hidden sm:inline ">&lt; {profile.person.firstName} /&gt;</span>
+                <span className="hidden sm:inline "><span className="text-secondary-400">&lt;</span> {profile.person.firstName} <span className="text-secondary-400">/&gt;</span></span>
                 <img className="sm:hidden size-12 rounded-lg ring-1 ring-primary-400" src="./icon1.png" 
                     alt="icon with link to top of page" />
             </a>
